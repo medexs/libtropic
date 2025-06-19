@@ -73,6 +73,38 @@ endif()
 if(LT_TEST_CHIP_ID)
     target_compile_definitions(run PRIVATE LT_TEST_CHIP_ID)
 endif()
+# -DLT_TEST_DUMP_CERT_STORE=1
+if(LT_TEST_DUMP_CERT_STORE)
+    target_compile_definitions(run PRIVATE LT_TEST_DUMP_CERT_STORE)
+endif()
+# -DLT_TEST_DUMP_I_CONFIG=1
+if(LT_TEST_DUMP_I_CONFIG)
+    target_compile_definitions(run PRIVATE LT_TEST_DUMP_I_CONFIG)
+endif()
+# -DLT_TEST_DUMP_R_CONFIG=1
+if(LT_TEST_DUMP_R_CONFIG)
+    target_compile_definitions(run PRIVATE LT_TEST_DUMP_R_CONFIG)
+endif()
+# --DLT_TEST_ECC_ECDSA=1
+if(LT_TEST_ECC_ECDSA)
+    target_compile_definitions(run PRIVATE LT_TEST_ECC_ECDSA)
+endif()
+# --DLT_TEST_ECC_EDDSA=1
+if(LT_TEST_ECC_EDDSA)
+    target_compile_definitions(run PRIVATE LT_TEST_ECC_EDDSA)
+endif()
+# --DLT_TEST_ERASE_R_CONFIG=1
+if(LT_TEST_ERASE_R_CONFIG)
+    target_compile_definitions(run PRIVATE LT_TEST_ERASE_R_CONFIG)
+endif()
+# --DLT_TEST_PING=1
+if(LT_TEST_PING)
+    target_compile_definitions(run PRIVATE LT_TEST_PING)
+endif()
+# --DLT_TEST_R_MEM=1
+if(LT_TEST_R_MEM)
+    target_compile_definitions(run PRIVATE LT_TEST_R_MEM)
+endif()
 # -DLT_TEST_WRITE_PAIRING_KEYS=1
 if(LT_TEST_WRITE_PAIRING_KEYS)
     target_compile_definitions(run PRIVATE LT_TEST_WRITE_PAIRING_KEYS)
@@ -80,22 +112,6 @@ endif()
 # -DLT_TEST_WRITE_R_CONFIG=1
 if(LT_TEST_WRITE_R_CONFIG)
     target_compile_definitions(run PRIVATE LT_TEST_WRITE_R_CONFIG)
-endif()
-# --DLT_TEST_PING=1
-if(LT_TEST_PING)
-    target_compile_definitions(run PRIVATE LT_TEST_PING)
-endif()
-# --DLT_TEST_ECC_EDDSA=1
-if(LT_TEST_ECC_EDDSA)
-    target_compile_definitions(run PRIVATE LT_TEST_ECC_EDDSA)
-endif()
-# --DLT_TEST_R_MEM=1
-if(LT_TEST_R_MEM)
-    target_compile_definitions(run PRIVATE LT_TEST_R_MEM)
-endif()
-# --DLT_TEST_ERASE_R_CONFIG=1
-if(LT_TEST_ERASE_R_CONFIG)
-    target_compile_definitions(run PRIVATE LT_TEST_ERASE_R_CONFIG)
 endif()
 
 ###########################################################################
