@@ -154,6 +154,7 @@ set(LIBTROPIC_TEST_LIST
     lt_test_write_pairing_keys
     lt_test_write_r_config
     lt_test_ping
+    lt_test_ecc_ecdsa
     lt_test_ecc_eddsa
     lt_test_r_mem
     lt_test_erase_r_config
