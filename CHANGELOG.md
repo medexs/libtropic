@@ -58,6 +58,7 @@ files `libtropic_examples.h`, `libtropic_functional_tests.h`)
 - added CTest handling for functional tests
 - Added CMake variable `LT_SH0_PRIV_PATH`, based on which `sh0_keys.c` is generated for examples or tests, so
   sh0priv and sh0pub are defined
+- Added CTest handling for functional tests run against TROPIC01 model
 
 ### Fixed
 
