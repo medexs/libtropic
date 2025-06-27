@@ -39,6 +39,7 @@ files `libtropic_examples.h`, `libtropic_functional_tests.h`)
 - Instead of using `LT_ADD_FUNC_TESTS` and `LT_BUILD_TESTS`, use only `LT_BUILD_TESTS`
 - Rename `LT_ADD_EXAMPLES` to `LT_BUILD_EXAMPLES` to be consistent with `LT_BUILD_TESTS`
   and `LT_BUILD_DOCS`
+- When `LT_BUILD_EXAMPLES` or `LT_BUILD_TESTS` are set, CMake requires to define `LT_SH0_PRIV_PATH`
 
 
 ### Added
@@ -52,6 +53,8 @@ files `libtropic_examples.h`, `libtropic_functional_tests.h`)
 - port/ support and tests/platform/ example for Raspberry Pi
 - Added macro `LT_USE_ASSERT`, based on which `assert()` is inserted into `LT_ASSERT` and `LT_ASSERT_COND`
 - added CTest handling for functional tests
+- Added CMake variable `LT_SH0_PRIV_PATH`, based on which `sh0_keys.c` is generated for examples or tests, so
+  sh0priv and sh0pub are defined
 
 ### Fixed
 
